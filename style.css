@@ -1,0 +1,80 @@
+
+.container{ 
+    border: 10px solid green;
+}   
+.row{ 
+    border: 10px solid orange;
+}
+.col{ 
+    background: yellow;
+} 
+.box1{   
+    background: pink; 
+    font-size: 20px; 
+    min-height: 150px;  
+}  
+.box2{ 
+    background: rgb(252, 141, 141); 
+    font-size: 20px; 
+    min-height: 150px;  
+}  
+.box3{   
+    min-height: 150px;  
+    background: rgb(204, 189, 218);  
+    font-size: 20px;
+} 
+.box4{ 
+    min-height: 150px;  
+    background: rgb(116, 241, 32); 
+    font-size: 20px;
+}     
+
+.image img{ 
+    width: 300px; 
+    height: 300px;
+} 
+
+.border-Custom{ 
+    border: 5px solid green;
+} 
+
+@media (max-width:767px){ 
+    .mob-w-100{ 
+        width: 100px;
+    }
+}
+
+.card_wrapper img{ 
+    width: 8rem; 
+    height: 8rem; 
+    object-fit: cover; 
+    margin: auto;
+}   
+
+.card_wrapper .card_img{ 
+    margin-top: -50px;
+}  
+
+.custom_loader .spinner-border{ 
+    width: 5rem; 
+    height: 5rem; 
+    border-radius: 100%;
+} 
+ 
+.custom_slider img{ 
+    height: 400px; 
+} 
+
+.custom_scroll{ 
+    position: relative; 
+    height: 200px; 
+    margin-top: 0.5rem; 
+    overflow: auto;
+}  
+
+.vertical_scroll{ 
+    position: relative; 
+    height: 350px;  
+    overflow: auto;
+
+}

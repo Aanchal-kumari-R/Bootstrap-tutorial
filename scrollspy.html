@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5</title> 
+    <!--Bootstrap Css Cdn link--> 
+    <!-- <link rel = "stylesheet" href="css/bootstrap.css"> -->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Css Custom link--> 
+    <link rel = "stylesheet" href = "style.css">                            
+
+
+</head>
+<body>  
+    <div class="container"> 
+        <div class="row">  
+            
+            <div class="col-sm-12 text-center"> 
+                <h2>Bootstrap 5 Scrollspy</h2>
+            </div>  
+            <nav id = "navbar-example2" class="navbar navbar-light bg-light px-3"> 
+            <a class="navbar-brand" href ="#">Navbar</a> 
+             <ul class="nav nav-pills"> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#scrollspyHeading1">First</a>
+                </li> 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                </li> 
+                <li class="nav-item dropdown"> 
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" href ="#" 
+                    aria-expanded="false">Dropdown</a> 
+                    <ul class="dropdown-menu"> 
+                        <li><a class="nav-link" href="#scrollspyHeading3">Third</a></li> 
+                        <li><a class="nav-link" href="#scrollspyHeading4">Fourth</a></li> 
+                        <li><a class="nav-link" href="#scrollspyHeading5">Five</a></li>
+                    </ul>
+                </li>
+             </ul>
+            </nav> 
+            <div class="custom_scroll" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0"  
+            class="scrollspyExample" tabindex="0"> 
+            <h4 id = "scrollspyHeading1">First Heading</h4>  
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque maiores provident nesciunt cupiditate voluptatum  
+            quisquam omnis, laboriosam pariatur odit veniam totam temporibus tempore officiis error ut ab optio facere tenetur.</p> 
+            <h4 id = "scrollspyHeading2">Second Heading</h4> 
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates corporis provident nam est dignissimos quod, 
+             quo nostrum quis iste aliquid mollitia optio tenetur, corrupti debitis, nemo laboriosam fugiat. Voluptatibus, similique.</p>
+             <h4 id = "scrollspyHeading3">Third Heading</h4> 
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, exercitationem in. Saepe debitis veniam  
+                beatae earum? Numquam eum mollitia quod in dolorum, magni ullam fugiat quaerat iste rerum eaque modi?</p> 
+            <h4 id = "scrollspyHeading4">Four Heading</h4> 
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, impedit! Odit maxime incidunt, unde quae 
+             voluptas quibusdam numquam dolorem ullam commodi. Quod totam facilis quos porro, voluptatum provident aliquam numquam!</p> 
+             <h4 id = "scrollspyHeading5">Five Heading</h4>
+            </div>   
+
+            <h3>Nested, Vertical</h3> 
+            <div class="row"> 
+                <div class="col-4"> 
+                    <nav id ="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3"> 
+                        <a class="navbar-brand" href="#">Navbar</a> 
+                        <nav class="nav nav-pills flex-column">  
+                            <a class="nav-link" href="#item-1">Item 1</a> 
+                               <nav class="nav nav-pills flex-column"> 
+                                   <a class="nav-link ms-3 my-1" href="#item-1-1">Item-1-1</a> 
+                                   <a class="nav-link ms-3 my-1" href="#item-1-2">Item-1-2</a>
+                               </nav> 
+                            <a class="nav-link" href="#item-2">Item 2</a> 
+                            <a class="nav-link" href="#item-3">Item 3</a> 
+                               <nav class="nav nav-pills flex-column">  
+                                    <a class="nav-link ms-3 my-1" href="#item-3-1">Item-3-1</a> 
+                                    <a class="nav-link ms-3 my-1" href="#item-3-2">Item-3-2</a>
+                               </nav> 
+                        </nav>
+                    </nav> 
+                </div>  
+                <div class="col-8"> 
+                    <div class="vertical_scroll" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" 
+                    tabindex="0">  
+                    <h4 id = "item-1">Item 1</h4> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum delectus deserunt, dolore et laborum, 
+                     exercitationem rem cumque odit, sequi asperiores nam obcaecati? Sunt quae incidunt eaque ducimus, omnis suscipit quos!</p>
+                    <h4 id ="item-1-1">Item-1-1</h4> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium in laboriosam, eos veniam voluptatum 
+                     fuga illum, officia soluta quas labore, ipsum ut numquam facilis libero fugit veritatis illo facere atque?</p> 
+                     <h4 id ="item-1-2">Item-1-2</h4> 
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequatur doloribus, ducimus tempore fuga omnis asperiores 
+                     accusantium? Deleniti, eius accusantium blanditiis eveniet neque non culpa corrupti aliquid maiores necessitatibus natus?</p>
+                    <h4 id="item-2">Item 2</h4> 
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati recusandae nisi velit officia, aspernatur voluptatem 
+                     quisquam? Magni nesciunt tempore expedita totam. Vero molestias atque excepturi quia dolore, fugit ullam ad!</p> 
+                     <h4 id ="item-3">Item 3</h4> 
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta minus iusto eum quasi rem! 
+                     Voluptatibus, ab vel doloremque reiciendis, deserunt officiis obcaecati tempora soluta iusto pariatur mollitia hic quas aut.</p> 
+                     <h4 id ="item-3-1">Item-3-1</h4> 
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus dignissimos quia quibusdam magni 
+                     numquam, culpa quos iste sapiente dicta voluptate dolores quam porro, iusto, minima nam error non enim reiciendis.</p> 
+                     <h4 id ="item-3-2">Item-3-2</h4>
+                    </div>
+                </div>  
+
+                <h3>List</h3> 
+                <div class="row">
+                    <div class="col-4">
+                      <div id="list-example" class="list-group">
+                        <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="custom_scroll" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                        <h4 id="list-item-1">Item 1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aperiam odio dicta necessitatibus officia deleniti,  
+                        harum nobis vel, mollitia, tempora consectetur! Provident architecto accusantium, molestiae totam earum ex! Quasi, totam?</p>
+                        <h4 id="list-item-2">Item 2</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, neque. Veniam labore nihil provident beatae suscipit  
+                        adipisci, distinctio cupiditate dolores esse iste porro vitae sequi accusamus, ipsum animi tempore quod! 
+                        </p>
+                        <h4 id="list-item-3">Item 3</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sapiente debitis deserunt. Quia alias impedit aliquid illum incidunt, 
+                         eveniet exercitationem fugiat! Aperiam autem reprehenderit distinctio, labore architecto molestias eveniet iste?</p>
+                        <h4 id="list-item-4">Item 4</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia iure totam laborum ipsum in tenetur numquam 
+                         dolores accusantium? Incidunt voluptatum ipsum a voluptatem porro totam necessitatibus, laboriosam tempora suscipit autem!</p>
+                      </div>
+                    </div>
+                  </div>  
+
+            </div>
+
+        </div>
+    </div>  
+
+     
+
+
+
+      <!--Js Cdn link-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
